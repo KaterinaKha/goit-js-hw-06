@@ -7,7 +7,7 @@ for (const ingredient of ingredients) {
 	const liElement = document.createElement("li");
 	liElement.textContent = ingredient;
 	liElement.classList.add("item");
-	liElement.classList;
+	liElement.style.listStyleType = "none";
 	fragment.appendChild(liElement);
 }
 
