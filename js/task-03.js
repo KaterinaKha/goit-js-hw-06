@@ -15,10 +15,11 @@ const images = [
 const imagesList = document.querySelector(".gallery");
 
 const makeImgElement = ({ url, alt }) => {
-	return `<li> <img src=${url} alt = ${alt}/> </li>`;
+	return `<li><img class = "gallery-item" src="${url}" alt="${alt}" width = "300"></li>`;
 };
 
 const imgElements = images.map(image => makeImgElement(image)).join("");
 
 imagesList.insertAdjacentHTML("afterbegin", imgElements);
+imagesList.style.listStyleType = "none";
 console.log(imagesList);
